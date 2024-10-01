@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "4ccl-website": {
+    "4cccl-website": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/4ccl-website",
+            "outputPath": "dist/4cccl-website",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -62,10 +62,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "4ccl-website:build:production"
+              "buildTarget": "4cccl-website:build:production"
             },
             "development": {
-              "buildTarget": "4ccl-website:build:development"
+              "buildTarget": "4cccl-website:build:development"
             }
           },
           "defaultConfiguration": "development"
