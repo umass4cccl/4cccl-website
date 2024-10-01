@@ -1,0 +1,67 @@
+.venmo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(135deg, #efdfa600, #f5883400);
+    border-radius: 15px;
+    max-width: 600px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.venmo-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.venmo-logo {
+    width: 80px;
+    /* Adjust size as needed */
+    margin-bottom: 15px;
+}
+
+.venmo-qr {
+    width: 150px;
+    /* Adjust size as needed */
+    margin: 20px 0;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+h2 {
+    color: #ffffff;
+    background-color: #3d95ce;
+    /* Venmo-like blue background */
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+p {
+    color: #ffffff;
+}
+
+/* Venmo logo styling */
+.venmo-logo {
+    width: 80px;
+    /* Adjust size as needed */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    /* Smooth hover transition */
+}
+
+a:hover .venmo-logo {
+    transform: scale(1.1);
+    /* Slightly enlarge the logo on hover */
+    opacity: 0.8;
+    /* Slightly reduce opacity on hover */
+}

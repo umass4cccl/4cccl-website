@@ -1,0 +1,97 @@
+/* Styling for the main about description container */
+.about-container {
+    background: linear-gradient(135deg, #efdfa6, #f58834);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-description {
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Styling for the e-board section */
+.e-board-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.e-board-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+}
+h1,
+h2 {
+    color: #ffffff;
+}
+.member-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.member-photo {
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    width: 100%;
+    /* Ensure the photo takes up the full card width  */
+    transition: opacity 0.3s ease;
+} 
+
+
+.member-card:hover .member-photo {
+    opacity: 0.2;
+}
+
+ .member-description {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     /* Align content at the top */
+     align-items: center;
+     background: rgba(0, 0, 0, 0);
+     /* Adjust background to ensure text readability */
+     color: #fff;
+     padding: 10px;
+     text-align: center;
+     opacity: 0;
+     transition: opacity 0.3s ease;
+     overflow-y: scroll;
+     /* Enable scrolling when content overflows */
+ }
+
+ .member-description::-webkit-scrollbar {
+     width: 5px;
+ }
+
+ .member-description::-webkit-scrollbar-thumb {
+     background-color: rgba(255, 255, 255, 0.5);
+     border-radius: 10px;
+ }
+
+ .member-description h3,
+ .member-description p {
+     margin: 5px 0;
+     /* Adjust margin */
+ }
+
+ .member-card:hover .member-description {
+     opacity: 1;
+ }

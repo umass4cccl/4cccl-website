@@ -1,1 +1,79 @@
-/* You can add global styles to this file, and also import other style files */
+/* Apply the gradient to the entire viewport */
+html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: linear-gradient(135deg, #efdfa6, #f58834);
+    /* Full gradient background */
+    font-family: Arial, sans-serif;
+    /* Adjust this font-family to your preference */
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: linear-gradient(135deg, #efdfa6, #f58834);
+    /* Full gradient background */
+    font-family: Arial, sans-serif;
+    /* Adjust this font-family to your preference */
+    overflow-x: hidden;
+    z-index: -99;
+}
+
+/* Ensure that the hero section takes up the full height of the viewport */
+.hero-section {
+    width: 100%;
+    height: 100vh;
+    /* Ensure the hero section covers the entire viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+}
+
+
+.hero-title {
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero-buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.donate-btn:hover,
+.events-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

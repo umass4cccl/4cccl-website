@@ -1,0 +1,105 @@
+.contact-container {
+    margin: 20px;
+    padding: 20px;
+    background: linear-gradient(135deg, #efdfa600, #f5883400);
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #3dc1c2;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #3dc1c2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+/* Change the background color to #3dc1c2 */
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #3dc1c2;
+    /* New color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+/* Change the hover color to a slightly darker shade */
+button:hover {
+    background-color: #33a6a6;
+    /* Slightly darker shade for hover effect */
+}
+
+button:disabled {
+    background-color: #33a6a6;
+    /* Keep the main color */
+    opacity: 0.6;
+    /* Reduce opacity to indicate disabled state */
+    cursor: not-allowed;
+    /* Change cursor to indicate non-clickable */
+}
+
+/* Styling for the success message */
+.success-message {
+    color: #28a745;
+    /* Green color */
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Styling for the error message */
+.error-message {
+    color: #dc3545;
+    /* Red color */
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}

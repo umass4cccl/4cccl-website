@@ -1,0 +1,139 @@
+/* Make the hero section bigger */
+.hero-section {
+    /* Ensure the hero section covers the entire viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+    
+    /* Add padding to prevent content from touching the edges */
+}
+
+/* Increase the size of the title */
+.hero-title {
+    font-family: 'Arial';
+    font-size: 4rem;
+    /* Increase the font size */
+    margin-bottom: 20px;
+    /* Adjust spacing */
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Increase the size of the subtitle */
+.hero-subtitle {
+    font-size: 1.5rem;
+    /* Increase the font size */
+    margin-bottom: 30px;
+    /* Adjust spacing */
+}
+
+/* Increase the size of the buttons */
+.hero-buttons {
+    margin-top: 30px;
+    /* Adjust spacing */
+}
+
+.btn {
+    padding: 15px 30px;
+    /* Increase padding */
+    margin: 10px;
+    /* Increase margin */
+    font-size: 1.2rem;
+    /* Increase font size */
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.donate-btn {
+    background: #f58834;
+    color: #fff;
+}
+
+.events-btn {
+    background: #3dc1c2;
+    color: #fff;
+}
+
+.donate-btn:hover,
+.events-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.logo {
+    height: 60px;
+    /* Adjust size as needed */
+    margin-right: 10px;
+}
+
+.hero-logo {
+    width: 120px;
+    /* Adjust size as needed */
+    margin-bottom: 20px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* Social links container styling */
+.social-links-container {
+    display: flex;
+    justify-content: center;
+    /* Center the container content */
+    align-items: center;
+    /* Center the items vertically */
+    gap: 15px;
+    /* Add space between the Instagram and CCCL logos */
+    margin-top: 20px;
+    /* Adjust the spacing from the buttons */
+}
+
+/* Instagram logo styling */
+.instagram-link svg {
+    width: 50px;
+    /* Set the size of the Instagram logo */
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.instagram-link:hover {
+    transform: scale(1.1);
+    /* Zoom effect on hover */
+}
+
+/* CCCL logo styling */
+.cccl-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cccl-logo {
+    width: 50px;
+    /* Make the CCCL logo the same size as the Instagram logo */
+    height: 50px;
+    /* Ensure the CCCL logo is the same height */
+    transition: transform 0.3s ease;
+}
+
+.cccl-logo:hover {
+    transform: scale(1.1);
+    /* Zoom effect on hover */
+}

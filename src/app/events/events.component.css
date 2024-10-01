@@ -1,0 +1,52 @@
+/* Ensure the parent container is centered */
+.events-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #efdfa6, #f58834);
+    border-radius: 10px;
+    text-align: center;
+    /* Ensure text inside is centered */
+}
+
+h1,
+h2 {
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+p {
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+}
+/* Adjusted CSS for .event-card */
+/* Adjusted CSS for .event-card */
+.event-card {
+    display: block;
+    /* Change from inline-flex to block to allow centering */
+    margin: 10px auto;
+    /* Ensure the card is centered */
+    padding: 10px 15px;
+    background: linear-gradient(135deg, #f5883400, #f5883400);
+    border-radius: 15px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+    /* Allow the card to fit the content */
+    text-align: center;
+}
+
+.event-card h3 {
+    margin-top: 0;
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.event-card p {
+    margin: 5px 0;
+}

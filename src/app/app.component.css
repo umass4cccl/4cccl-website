@@ -1,0 +1,37 @@
+nav {
+    display: flex;
+    justify-content: center;
+    /* Center the items horizontally */
+    align-items: center;
+    /* Center the items vertically */
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    background: linear-gradient(135deg, #efdfa6, #f58834);
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+nav a:hover {
+    color: #f58834;
+    /* Change to match your theme */
+}
+
+/* app.component.css or where your navbar styles are located */
+
+/* Style for active navigation link */
+/* Add this to your CSS to style the active link */
+nav a.active-link {
+    font-weight: bold;
+    color: #f58834;
+    /* Change to your desired color */
+}
