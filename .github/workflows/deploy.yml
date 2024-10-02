@@ -3,7 +3,7 @@ name: Deploy Angular to GitHub Pages
 on:
   push:
     branches:
-      - main   # Change to 'master' if that's your branch name
+      - master   # Changed to 'master'
 
 jobs:
   build-deploy:
@@ -27,5 +27,5 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
       with:
-        branch: gh-pages   # The branch to deploy to
-        folder: dist/4cccl-website  # Replace with the exact folder name generated in your dist directory
+        branch: gh-pages
+        folder: dist/4cccl-website
