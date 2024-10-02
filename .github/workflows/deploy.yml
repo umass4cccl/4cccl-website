@@ -3,7 +3,7 @@ name: Deploy Angular to GitHub Pages
 on:
   push:
     branches:
-      - master   # Change to your branch name
+      - master   # Adjust this to your branch name if needed
 
 jobs:
   build-deploy:
@@ -29,4 +29,4 @@ jobs:
       with:
         branch: gh-pages
         folder: dist/4cccl-website  # Ensure this path is correct
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.GITHUB_TOKEN }}  # Ensure this line is present
