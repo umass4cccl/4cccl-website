@@ -3,7 +3,7 @@ name: Deploy Angular to GitHub Pages
 on:
   push:
     branches:
-      - master   # Changed to 'master'
+      - master   # Change to your branch name
 
 jobs:
   build-deploy:
@@ -16,16 +16,17 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '18'  # Use an LTS version
+        node-version: '18'  # Use a stable LTS version
 
     - name: Install dependencies
       run: npm install
 
     - name: Build Angular project
-      run: npm run build -- --base-href "https://umass4cccl.github.io/4cccl-website/"
+      run: npm run build -- --base-href "/4cccl-website/"
 
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
       with:
         branch: gh-pages
-        folder: dist/4cccl-website
+        folder: dist/4cccl-website  # Ensure this path is correct
+        token: ${{ secrets.GITHUB_TOKEN }}
