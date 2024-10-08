@@ -6,15 +6,16 @@
 </div>
 
 <div class="e-board-container">
-  <h2>Meet Our E-Board</h2>
+  <h1>Meet Our E-Board</h1>
   <div class="e-board-grid">
-    <!-- Repeat this block for each member (9 members in total) -->
-    <div class="member-card" *ngFor="let member of eBoardMembers">
+    <!-- Loop through each member -->
+    <div *ngFor="let member of eBoardMembers" class="member-card">
       <div class="member-photo" [ngStyle]="{'background-image': 'url(' + member.photo + ')'}"></div>
+      <!-- Only show description on desktop -->
       <div class="member-description">
-        <h3>{{ member.name }}</h3>
-        <p>{{ member.role }}</p>
-        <p> {{ member.description }}</p>
+        <h1>{{ member.name }}</h1>
+        <h2>{{ member.role }}</h2>
+        <p>{{ member.description }}</p>
       </div>
     </div>
   </div>
