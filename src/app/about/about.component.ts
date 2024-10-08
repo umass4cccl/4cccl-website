@@ -46,12 +46,12 @@ export class AboutComponent {
       role: 'Treasurer', 
       description: `Hi everyone, I'm Georges. I am a Mechanical Engineering major committed to helping children in Lebanon. I am the treasurer of 4CCCL. Fun fact about me: I have only been skiing once in my life (in the picture)!`
     },
-    // {
-    //   name: 'Adam Farhat',
-    //   photo: 'assets/adam.png',
-    //   role: 'Treasurer', 
-    //   description: 
-    // },
+    {
+      name: 'Adam Farhat',
+      photo: 'assets/adam.png',
+      role: 'Treasurer', 
+      description: `Hi I’m Adam! I’m treasurer for UMass4CCCL. I’m a Sophomore majoring in Biochemistry and Molecular Biology, pursuing cosmetic and reconstructive surgery. A fun fact about me is that I play electric guitar! Lebanon is my home and I’m grateful for the chance to give back.`
+    },
     {
       name: 'Spencer Masoud',
       photo: 'assets/spencer.png',

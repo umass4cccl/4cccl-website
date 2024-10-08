@@ -1,37 +1,132 @@
-nav {
-    display: flex;
-    justify-content: center;
-    /* Center the items horizontally */
-    align-items: center;
-    /* Center the items vertically */
-    position: sticky;
-    top: 0;
-    background-color: rgba(255, 255, 255, 0.8);
-    background: linear-gradient(135deg, #efdfa6, #f58834);
-    padding: 10px 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
+/* Desktop Navbar */
+.desktop-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  background: linear-gradient(135deg, #efdfa6, #f58834);
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
 
-nav a {
-    margin-right: 15px;
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 30px;
+.desktop-nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 30px;
 }
 
-nav a:hover {
-    color: #f58834;
-    /* Change to match your theme */
+.desktop-nav a:hover {
+  color: #f58834;
 }
 
-/* app.component.css or where your navbar styles are located */
-
-/* Style for active navigation link */
-/* Add this to your CSS to style the active link */
 nav a.active-link {
-    font-weight: bold;
-    color: #f58834;
-    /* Change to your desired color */
+  font-weight: bold;
+  color: #f58834;
+  text-decoration: underline;
+}
+
+/* Hide the desktop navbar on small screens */
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+  }
+}
+
+/* Mobile Navbar */
+.mobile-nav {
+  display: none;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 1001;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+}
+
+.hamburger div {
+  width: 30px;
+  height: 4px;
+  background-color: #f8f3f3;
+  margin: 5px 0;
+}
+
+.mobile-links {
+  display: none;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.mobile-links a {
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-decoration: none;
+  color: #f58834;
+  font-weight: bold;
+}
+
+/* Show the mobile navbar on small screens */
+@media (max-width: 768px) {
+  .mobile-nav {
+    display: flex;
+  }
+
+  .mobile-links.open {
+    display: flex;
+  }
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #33333300;
+  /* Dark background */
+  color: #fff;
+  /* White text */
+  text-align: center;
+  /* Centered text */
+  padding: 20px 0;
+  /* Spacing around the text */
+  width: 100%;
+  /* Full width */
+  font-size: 14px;
+  margin-top: auto;
+  /* Push footer to the bottom if content is short */
+}
+
+/* Body and Main Content Layout */
+html,
+body {
+  height: 100%;
+  /* Full height to ensure footer stays at the bottom */
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* Ensure the body stretches to full view height */
+}
+
+main {
+  flex: 1;
+  /* Main content takes up all the remaining space */
+  padding: 20px;
+  background: linear-gradient(135deg, #efdfa6, #f58834);
 }

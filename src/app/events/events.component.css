@@ -8,7 +8,6 @@
     background: linear-gradient(135deg, #efdfa6, #f58834);
     border-radius: 10px;
     text-align: center;
-    /* Ensure text inside is centered */
 }
 
 h1,
@@ -24,19 +23,16 @@ p {
     color: #ffffff;
     font-size: 18px;
 }
-/* Adjusted CSS for .event-card */
+
 /* Adjusted CSS for .event-card */
 .event-card {
     display: block;
-    /* Change from inline-flex to block to allow centering */
     margin: 10px auto;
-    /* Ensure the card is centered */
     padding: 10px 15px;
     background: linear-gradient(135deg, #f5883400, #f5883400);
     border-radius: 15px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
     width: fit-content;
-    /* Allow the card to fit the content */
     text-align: center;
 }
 
@@ -49,4 +45,40 @@ p {
 
 .event-card p {
     margin: 5px 0;
+}
+
+.events-section {
+    text-align: center;
+    margin: 50px auto;
+}
+
+/* Adjusting the calendar container */
+.calendar-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+    /* Ensures it uses the full width available */
+    max-width: 1000px;
+    /* Set a max width for larger screens */
+}
+
+/* Adjust iframe width and height */
+iframe {
+    width: 100%;
+    height: 600px;
+    /* Maintain height */
+    max-width: 1000px;
+    /* Set a reasonable max-width */
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+    iframe {
+        width: 100%;
+        height: 500px;
+        /* Adjust height for mobile */
+    }
 }

@@ -1,4 +1,5 @@
-<nav>
+<!-- Desktop Navbar -->
+<nav class="desktop-nav">
   <a routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">Home</a>
   <a routerLink="/about" routerLinkActive="active-link">About</a>
   <a routerLink="/events" routerLinkActive="active-link">Events</a>
@@ -6,9 +7,28 @@
   <a routerLink="/contact" routerLinkActive="active-link">Contact</a>
 </nav>
 
-<!-- Buttons for direct actions -->
-<!-- <button routerLink="/donate" class="btn btn-primary">Donate Now</button>
-<button routerLink="/events" class="btn btn-secondary">View Events</button> -->
+<!-- Mobile Navbar - Hamburger Icon -->
+<div class="mobile-nav">
+  <div class="hamburger" (click)="toggleMobileMenu()">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+
+  <!-- Navigation Links for Mobile -->
+  <nav [class.open]="isMobileMenuOpen" class="mobile-links">
+    <a routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }" (click)="toggleMobileMenu()">Home</a>
+    <a routerLink="/about" routerLinkActive="active-link" (click)="toggleMobileMenu()">About</a>
+    <a routerLink="/events" routerLinkActive="active-link" (click)="toggleMobileMenu()">Events</a>
+    <a routerLink="/donate" routerLinkActive="active-link" (click)="toggleMobileMenu()">Donate</a>
+    <a routerLink="/contact" routerLinkActive="active-link" (click)="toggleMobileMenu()">Contact</a>
+  </nav>
+</div>
 
 <!-- Add router-outlet here -->
 <router-outlet></router-outlet>
+<!-- Footer Section -->
+<footer class="footer">
+  <p>© 2024 UMass 4CCCL. All rights reserved. Website Designed and Developed by Emma Azzi :)</p>
+</footer>
+
